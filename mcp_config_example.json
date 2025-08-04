@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "env": {
+        "MCP_SERVER_FILESYSTEM_ROOT": "."
+      }
+    },
+    "git": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-git"],
+      "env": {
+        "MCP_SERVER_GIT_REPOSITORY_ROOT": "."
+      }
+    },
+    "trends-hub": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-trends-hub"]
+    },
+    "duckduckgo": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-duckduckgo"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "your-brave-api-key-here"
+      }
+    }
+  }
+}
